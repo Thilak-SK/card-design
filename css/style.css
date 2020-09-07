@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* total card part */
+.card {
+  width: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.3s ease;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(246, 242, 238);
+  box-shadow: 5px 5px 15px rgb(126, 124, 124);
+  cursor: pointer;
+}
+
+/*card top image */
+.card-img > img {
+  width: 350px;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: auto;
+}
+
+/* card header (mid part) */
+.card-header {
+  text-align: center;
+}
+
+/*header heading  */
+.card-header > h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 8px;
+}
+
+/* header paragraph */
+.card-header > p {
+  padding: 5px;
+  margin: 0;
+}
+
+/* card footer (bottom part) */
+.card-footer {
+  position: relative;
+  display: flex;
+  width: inherit;
+  margin-top: 7px;
+  background-color: #6fb7f1;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* footer image */
+.image > img {
+  box-shadow: 5px 5px 10px rgb(70, 68, 68);
+  border-radius: 50%;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*footer image name */
+.name {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* animation effect for whole card */
+.card:hover {
+  transform: scale(1.1);
+}
